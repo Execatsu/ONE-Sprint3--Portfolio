@@ -20,6 +20,9 @@
     --page-actived-shadow: #333333;
 
     --menu-icon-color: #ffffff;
+
+    --license: #999;
+    --footer-home: linear-gradient(#222, #292929);
 }
 
 * {
@@ -34,6 +37,7 @@ body, a {
 body {
     background-color: var(--background-color);
     min-width: 162px;
+    min-height: 1vh;
 }
 
 .header {
@@ -95,6 +99,26 @@ body {
     display: flex;
 }
 
+.license {
+    background-color: var(--primary-color);
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    color: var(--license);
+    position: relative;
+}
+
+.license::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background: var(--highlight-color);
+}
+
 @media screen and (min-width: 0) {
     /* body {
         overflow-x: hidden;
@@ -103,6 +127,7 @@ body {
     .header__list {
         display: none;
         position: absolute;
+        z-index: 99999;
         right: 0;
         top: 55px;
         background: var(--primary-color);
@@ -172,4 +197,8 @@ body {
 
 .title::after {
     content: " >";
+}
+
+.highlight-sect {
+    background: var(--background-highlight-color);
 }

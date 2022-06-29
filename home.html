@@ -7,9 +7,11 @@
     <title>Home | Execatsu</title>
     <link rel="stylesheet" href="./assets/css/base/reset.css">
     <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/home/home.css">
     <link rel="stylesheet" href="./assets/css/home/about.css">
+    <link rel="stylesheet" href="./assets/css/home/footer.css">
 </head>
-<body>
+<body class="home-page">
     <header class="header">
         <h3>Execatsu</h3>
         <nav class="header__options">
@@ -27,8 +29,8 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="about container">
+    <main class="main">
+        <section class="about container highlight-sect">
             <span class="title">Sobre</span>
             <div class="about__image">
                 <img src="assets/img/avatar.jpg" alt="Foto de Perfil">
@@ -49,6 +51,23 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <section class="contact container">
+            <span class="title">Contato</span>
+            <ul class="social-network">
+                <li><a href="https://github.com/Execatsu"><img class="social-network__icon" src="./assets/img/github.svg" alt="GitHub Icon"></a></li>
+                <li><a href="mailto:execatsucontato@gmail.com"><img class="social-network__icon" src="./assets/img/gmail.svg" alt="Email Icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/c%C3%A1ssius-fernando-b9b262214/"><img class="social-network__icon" src="./assets/img/linkedin.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UC5JOl5DWVdFM1GVB3RvQvhQ"><img class="social-network__icon" src="./assets/img/youtube.svg" alt=""></a></li>
+            </ul>
+            <p>Siga-me em minhas redes sociais para termos contato ou envie um e-mail conforme a sua necessidade</p>
+        </section>
+        <section>
+            <span class="license">
+                &copy; Site desenvolvido por @Execatsu, usando as tecnologias: JavaScript, HTML e CSS.
+            </span>
+        </section>
+    </footer>
     <script src="./assets/js/base.js"></script>
 </body>
 </html>
