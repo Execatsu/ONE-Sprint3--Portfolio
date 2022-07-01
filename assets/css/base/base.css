@@ -8,6 +8,7 @@
 
     --primary-color: #444444;
     --secundary-color: #000;
+    --bar-color: #444;
 
     --primary-font: 1rem 'Roboto';
     --name-font: 'Pacifico', cursive;
@@ -45,9 +46,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
     padding: 5px 10px;
     height: 50px;
+    width: 100%;
+    z-index: 9500;
 }
 
 .header::before {
