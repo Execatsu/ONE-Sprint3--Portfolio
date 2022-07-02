@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/home/home.css">
     <link rel="stylesheet" href="./assets/css/home/about.css">
     <link rel="stylesheet" href="./assets/css/home/projecs.css">
+    <link rel="stylesheet" href="./assets/css/home/formation.css">
     <link rel="stylesheet" href="./assets/css/home/footer.css">
 </head>
 <body class="home-page">
@@ -24,15 +25,15 @@
             <ul id="header__list" class="header__list">
                 <li class="page-actived"><a href="#header">Início</a></li>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#">Experiência</a></li>
-                <li><a href="#">Certificados</a></li>
+                <li><a href="#experiences">Experiência</a></li>
+                <li><a href="#certificates">Certificados</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="about container highlight-sect">
-            <span class="title">Sobre</span>
+            <h3 class="title">Sobre</h3>
             <div class="about__image">
                 <img src="assets/img/avatar.jpg" alt="Foto de Perfil">
             </div>
@@ -51,120 +52,231 @@
                 </div>
             </div>
         </section>
-        <section class="projects home-div container" id="projects">
-            <div class="projects__header">
-                <span class="home-div__title">Projetos</span>
-                <a href="#" class="option-seeAll">Ver Todos</a>
+        <section class="projects carousel container" id="projects">
+            <div class="carousel__header">
+                <h3 class="carousel__header__title">Projetos</h3>
+                <a href="#" class="carousel__header__option-seeAll">Ver Todos</a>
             </div>
             <div class="home-bar"></div>
             
-            <ul class="projects__list">
+            <ul class="carousel__list">
                 <li>
-                    <div class="project">
-                        <img class="project-preview" src="./assets/img/avatar.jpg" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                        <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
                 <li>
-                    <div class="project"><img src="" alt="">
-                        <ul class="project__tecnologies">
-                            <li class="project__tecnology"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="project__tecnology"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                    <div class="carousel__item">
+                        <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                        <ul class="carousel__item-icons">
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
                         </ul>
                     </div>
-                    <p class="project__description">Nome do projeto</p>
+                    <p class="carousel__item__description">Nome do projeto</p>
                 </li>
             </ul>
             
         </section>
-        <section class="formation">
+        <section class="formation container">
+            <h3 class="title">Experiências</h3>
+            <article class="experiences" id="experiences">
 
+            </article>
+            <article class="certificates" id="certificates">
+                <div class="carousel__header">
+                    <h3 class="carousel__header__title">Certificados</h3>
+                    <a href="#" class="carousel__header__option-seeAll">Ver Todos</a>
+                </div>
+                <div class="home-bar"></div>
+                <ul class="carousel__list">
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/avatar.jpg" alt="">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Nome do projeto</p>
+                    </li>
+                </ul>
+            </article>
         </section>
     </main>
     <footer class="footer">

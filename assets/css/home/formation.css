@@ -1,0 +1,5 @@
+.formation {
+    background: var(--background-highlight-color);
+    /* padding-bottom: calc(( 100vw * 500) / 1440); */
+    position: relative;
+}

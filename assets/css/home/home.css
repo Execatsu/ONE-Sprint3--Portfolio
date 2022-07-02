@@ -4,21 +4,77 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-.home-div {
+.carousel {
     margin-top: 30px;
 }
 
-.home-div__title {
+.carousel__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+}
+
+.carousel__header__title {
     font-weight: 500;
     letter-spacing: 1px;
     text-shadow: 0px 0px 3px red;
 }
 
-.option-seeAll:hover {
+.carousel__header__option-seeAll:hover {
     background-image: var(--highlight-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: var(--text-primary-color);
     border-radius: 7px;
+}
+
+.carousel__list {
+    display: grid;
+    padding: 20px 0;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    overflow: auto;
+    
+}
+
+.carousel__list > li {
+    border: 1px solid #fdfdfd;
+    border-radius: 10px;
+    width: calc(1920px / 7.5);
+    overflow: hidden;
+}
+
+.carousel__item {
+    background: black;
+    height: calc(1080px / 7.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__item-preview {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.carousel__item__description {
+    background: var(--background-highlight-color);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__item-icons {
+    display: flex;
+    gap: 5px;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.carousel__item-icon > img {
+    height: 20px;
 }
