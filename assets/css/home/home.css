@@ -35,7 +35,7 @@ body {
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
     overflow: auto;
-    
+    width: 92vw;
 }
 
 .carousel__list > li {

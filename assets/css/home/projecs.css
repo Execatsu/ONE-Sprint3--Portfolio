@@ -23,6 +23,7 @@
 }
 
 @media screen and (min-width: 999px) {
+    
     .projects__list {
         max-width: calc(100vw - 140px);
     }

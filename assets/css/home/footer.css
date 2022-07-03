@@ -26,12 +26,14 @@
 }
 
 @media screen and (min-width: 0) {
+
     .social-network__icon {
         height: 40px;
     }
 }
 
 @media screen and (min-width: 768px) {
+    
     .social-network__icon {
         height: 30px;
     }

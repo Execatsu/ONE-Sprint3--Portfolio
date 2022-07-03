@@ -36,6 +36,7 @@
 }
 
 @media screen and (min-width: 0) {
+    
     .about__image {
         height: 7rem;
         width: 7rem;
@@ -43,6 +44,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
     .about__image {
         height: 10rem;
         width: 10rem;
@@ -50,6 +52,7 @@
 }
 
 @media screen and (min-width: 999px) {
+
     .about__image {
         height: 14rem;
         min-width: 14rem;
