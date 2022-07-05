@@ -30,6 +30,8 @@
     box-sizing: border-box;
     scrollbar-width: thin;
     scrollbar-color: var(--bar-color) transparent;
+    behavior: smooth;
+    scroll-behavior: smooth;
 }
     
 *::-webkit-scrollbar {
@@ -192,6 +194,7 @@ body {
 }
 
 .title {
+    display: flex;
     position: absolute;
     top: -15px;
     left: 50%;

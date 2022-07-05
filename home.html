@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./assets/css/home/footer.css">
 </head>
 <body class="home-page">
-    <header class="header" id="header">
-        <h3>Execatsu</h3>
+    <header class="header">
+        <h1>Execatsu</h1>
         <nav class="header__options">
             <div id="header__menu-icon" class="header__menu-icon">
                 <div></div>
@@ -32,7 +32,7 @@
         </nav>
     </header>
     <main class="main">
-        <section class="about container highlight-sect">
+        <section class="about container highlight-sect" id="header">
             <h3 class="title">Sobre</h3>
             <div class="about__image">
                 <img src="assets/img/avatar.jpg" alt="Foto de Perfil">
@@ -62,22 +62,35 @@
             <ul class="carousel__list">
                 <li>
                     <div class="carousel__item">
-                        <img class="carousel__item-preview" src="./assets/img/projects/pixelgame.png" alt="preview of project">
+                        <img class="carousel__item-preview" src="./assets/img/projects/pixelgame.png" alt="preview do projeto">
                         <ul class="carousel__item-icons">
-                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icon"></li>
-                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icon"></li>
-                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icon"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/javascript.svg" alt="javascript icone"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/html5.svg" alt="html icone"></li>
+                            <li class="carousel__item-icon"><img src="./assets/img/icons/css3.svg" alt="css icone"></li>
                         </ul>
                     </div>
                     <p class="carousel__item__description">Pixel Game</p>
                 </li>
             </ul>
-            
         </section>
         <section class="formation container">
             <h3 class="title">Experiências</h3>
             <article class="experiences" id="experiences">
-
+                <div class="experience">
+                    <div class="experience__img">
+                        <div class="experience__img-preview">
+                            <img src="./assets/img/agroquima-matriz.jpg" alt="Agroquima Matriz" class="experience__company-preview">
+                            <img src="./assets/img/companies/agroquima.png" alt="Agroquima Logo" class="experience__company-preview__icon">
+                        </div>
+                        <p class="experience__company-name">Agroquima</p>
+                    </div>
+                    <div class="experience__description">
+                        <div class="experience__text">
+                            <p class="experience__text-paragraph"> Iniciei na empresa no departamento de crédito e pelo meu bom desempenho e interesse na área de tecnologia fui transferido para o departamento de logistica após 2 meses e após meu reconhecimento por ajuda e recomendação de um amigo o gerente do departamento de sistemas, me ofereceu para trabalhar com suporte de ti enquanto não tinha vaga em seu departamento e após 2 meses no departamento de logistica, fui transferido novamente, onde me encontro trabalhando no momento. </p>
+                        </div>
+                        <h4 class="experience__span">Entre: Dezembro de 22 - Atualmente</h4>
+                    </div>
+                </div>
             </article>
             <article class="certificates carousel" id="certificates">
                 <div class="carousel__header">
@@ -106,12 +119,39 @@
                     </li>
                     <li>
                         <div class="carousel__item">
-                            <img class="carousel__item-preview" src="./assets/img/certificates/bradesco/fundamentals-of-programming-logic.pdf" alt="preview of certificate">
+                            <img class="carousel__item-preview" src="./assets/img/certificates/bradesco/fundamentals-of-programming-logic.jpg" alt="preview of certificate">
                             <ul class="carousel__item-icons">
                                 <li class="carousel__item-icon"><img src="./assets/img/companies/bradesco.svg" alt="javascript icon"></li>
                             </ul>
                         </div>
-                        <p class="carousel__item__description">Fundamentos de Programação II</p>
+                        <p class="carousel__item__description">Fundamentos de Programação</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/certificates/bradesco/introduction-to-object-oriented-programming-oop.jpg" alt="preview of certificate">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/companies/bradesco.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Introdução a POO</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/certificates/bradesco/java-programming-language-basic.jpg" alt="preview of certificate">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/companies/bradesco.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">Linguagem Java - Básico</p>
+                    </li>
+                    <li>
+                        <div class="carousel__item">
+                            <img class="carousel__item-preview" src="./assets/img/certificates/bradesco/unified-modeling-language-uml.jpg" alt="preview of certificate">
+                            <ul class="carousel__item-icons">
+                                <li class="carousel__item-icon"><img src="./assets/img/companies/bradesco.svg" alt="javascript icon"></li>
+                            </ul>
+                        </div>
+                        <p class="carousel__item__description">UML</p>
                     </li>
                 </ul>
             </article>
@@ -122,10 +162,10 @@
         <section class="contact container" id="contact">
             <span class="title">Contato</span>
             <ul class="social-network">
-                <li><a href="https://github.com/Execatsu"><img class="social-network__icon" src="./assets/img/companies/github.svg" alt="GitHub Icon"></a></li>
-                <li><a href="mailto:execatsucontato@gmail.com"><img class="social-network__icon" src="./assets/img/companies/gmail.svg" alt="Email Icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/c%C3%A1ssius-fernando-b9b262214/"><img class="social-network__icon" src="./assets/img/companies/linkedin.svg" alt=""></a></li>
-                <li><a href="https://www.youtube.com/channel/UC5JOl5DWVdFM1GVB3RvQvhQ"><img class="social-network__icon" src="./assets/img/companies/youtube.svg" alt=""></a></li>
+                <li><a href="https://github.com/Execatsu"><img class="social-network__icon" src="./assets/img/companies/github.svg" alt="icone do github"></a></li>
+                <li><a href="mailto:execatsucontato@gmail.com"><img class="social-network__icon" src="./assets/img/companies/gmail.svg" alt="icone do email"></a></li>
+                <li><a href="https://www.linkedin.com/in/c%C3%A1ssius-fernando-b9b262214/"><img class="social-network__icon" src="./assets/img/companies/linkedin.svg" alt="icone do linkedin"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC5JOl5DWVdFM1GVB3RvQvhQ"><img class="social-network__icon" src="./assets/img/companies/youtube.svg" alt="icone do youtube"></a></li>
             </ul>
             <p>Siga-me em minhas redes sociais para termos contato ou envie um e-mail conforme a sua necessidade</p>
         </section>
@@ -136,8 +176,6 @@
         </section>
     </footer>
     <script src="./assets/js/base.js"></script>
-    <script type="module" src="./assets/js/home/seeAllButtons.js"></script>
-    <script type="module" src="./assets/js/navButtons.js"></script>
-    <script src="./assets/js/scrollToOnClickEvent.js"></script>
+    <script src="./assets/js/scrollToIdOnClick.js"></script>
 </body>
 </html>

@@ -1,5 +1,147 @@
 .formation {
     background: var(--background-highlight-color);
-    /* padding-bottom: calc(( 100vw * 500) / 1440); */
+    padding-top: 20px;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience {
+    background: var(--formation-highlight);
+    display: flex;
+    padding: 15px;
+    border: 1px solid var(--formation-border);
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.experience__img {
+    width: calc(1920px / 7.5);
+    border: 1px solid #fdfdfd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.experience__img-preview {
+    background: black;
+    height: calc(1080px / 7.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience__company-preview {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.experience__company-name {
+    background: var(--background-highlight-color);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__company-preview__icon {
+    display: flex;
+    gap: 5px;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+}
+
+.experience__description {
+
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.experience__span {
+    color: var(--formation-experience__span);
+    font-size: 0.7rem;
+}
+
+.experience__text-paragraph {
+    margin: 5px 0;
+    text-indent: 1.5rem;
+}
+
+@media screen and (min-width: 0) {
+    .formation {
+        padding-bottom: 100px;
+    }
+
+    .experiences {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .experience-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .experience__description {
+        margin: 10px;
+    }
+    
+    .carousel__list {
+        max-width: calc(100vw - 30px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .experiences {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .carousel__list {
+        max-width: calc(100vw - 60px);
+    }
+}
+
+@media screen and (min-width: 999px) {
+    
+    .carousel__list {
+        max-width: calc(100vw - 140px);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .formation {
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .formation {
+        padding-bottom: 300px;
+    }
+
+    .experience {
+        flex-direction: row;
+        width: 50vw;
+    }
+
+    .experience:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 }

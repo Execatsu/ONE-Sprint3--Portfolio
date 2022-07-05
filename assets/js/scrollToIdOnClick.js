@@ -1,4 +1,10 @@
-export function scrollToIdOnClick(e) {
+const menuItems = document.querySelectorAll('.header__list a[href^="#"]');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+});
+
+function scrollToIdOnClick(e) {
     e.preventDefault();
 
     const headerHeight = 50;

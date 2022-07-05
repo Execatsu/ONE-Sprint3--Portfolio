@@ -1,5 +1,12 @@
+html {
+    --formation-highlight: linear-gradient(-30deg, #440000, #444400, #004400, #004444, #000044);
+    --formation-border: #777;
+    --formation-experience__span: #ccc; 
+}
+
 body {
     min-height: 100vh;
+    min-width: 445px;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
